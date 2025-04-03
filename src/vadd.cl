@@ -5,6 +5,4 @@ __kernel void vadd(
 ) {
     int i = get_global_id(0);
     c[i] = a[i] + b[i];
-    if (i == 0)
-        printf("%.2f + %.2f == %.2f\n", a[i], b[i], c[i]);
 }
